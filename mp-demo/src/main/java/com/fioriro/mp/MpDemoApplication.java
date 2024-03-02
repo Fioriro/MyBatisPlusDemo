@@ -1,4 +1,4 @@
-package com.itheima.mp;
+package com.fioriro.mp;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;

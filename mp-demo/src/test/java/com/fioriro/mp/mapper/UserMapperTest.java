@@ -1,6 +1,6 @@
-package com.itheima.mp.mapper;
+package com.fioriro.mp.mapper;
 
-import com.itheima.mp.domain.po.User;
+import com.fioriro.mp.domain.po.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

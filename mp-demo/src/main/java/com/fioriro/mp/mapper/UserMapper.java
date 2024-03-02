@@ -1,6 +1,6 @@
-package com.itheima.mp.mapper;
+package com.fioriro.mp.mapper;
 
-import com.itheima.mp.domain.po.User;
+import com.fioriro.mp.domain.po.User;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.itheima.mp.domain.po;
+package com.fioriro.mp.domain.po;
 
 import lombok.Data;
 
