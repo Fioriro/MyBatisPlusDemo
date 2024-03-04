@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.fioriro.mp.domain.po.User;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 
 import java.util.List;
 
@@ -16,6 +17,13 @@ public interface UserMapper extends BaseMapper<User> {
     @Select("select u.* from user u inner join mp.address a on u.id = a.user_id ${ew.customSqlSegment}")
     List<User> queryUserByWrapper(@Param("ew") QueryWrapper<User> wrapper);
 
+    /**
+     * 扣除用户余额
+     * @param id
+     * @param money
+     */
+    @Update("update user set balance = balance - #{money} where id = #{id}")
+    void deductMoneyById(@Param("id") Long id, @Param("money") Integer money);
 
 
 //    void saveUser(User user);
